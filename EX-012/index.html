@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(20, 20, 20);
+            color: whitesmoke;
+            text-align: center;
+        }
+    </style>
+    <title>Videos em HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu prorpio servidor</p>
+    <video width="560" height="315" poster="midia/videoframe_0.png" controls> <!--O "poster" como o nome ja diz, serve para colocar uma capa no video ou no caso uma imagem de primeiro frame-->
+        <source  controls src="midia/meu-video.mp4" type="video/mp4">
+    </video>
+   <!-- <video src="LOCAL DO VIDEO" controls></video> Forma simples e errada de adicionar um video--> 
+   <p>Seu navegador não suporta os videos clique <a target="_blank" href="midia/meu-video.mp4" rel="external">aqui</a> para ter acesso a cada um deles:</p>
+
+   <h1>Era para aparecer o Jhonny tocando guitarra.</h1>
+   <p><u>
+   Aparentemente em 2025 é preciso adicionar uma API ao site para poder adicionar videos em seu proprio site, não me aprofundei para achar uma solução
+   </u></p>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/XpqH6Ir-MYM?si=QzBsQmwfZjua9SeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!--Usando o (Compartilhar>Incorporar) do YouTube eu consigo adicionar videos no meu site, Aparentemente em 2025 é preciso adicionar uma API ao site para poder adicionar videos em seu proprio site, não me aprofundei para achar uma solução-->
+</body>
+</html>

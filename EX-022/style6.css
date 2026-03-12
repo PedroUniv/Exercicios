@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh;
+    background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover;
+    /*background-color: black;
+    background-image: url(imagens/wallpaper002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Deixa a imagem fixa na tela */
+}
+
+/*Shorthand background
+    background-color: (COR)
+    background-image: (URL)/(linear-gradient)
+    background-position: (center/top/left/right/bottom),(center/top/left/right/bottom)
+    background-repeat: (repeat), (no-repeat), (repeat-y), (repeat-x)
+    background-size: [size]
+    background-attachment:
+    */
+
+main{
+    max-width: 400px; /* Aumenta o tamanho maximo de largura de uma imagem/texto etc */
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+}

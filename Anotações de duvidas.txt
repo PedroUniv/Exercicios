@@ -1,0 +1,868 @@
+O que tem em um site?
+
+HTML é focada em conteudo, focada em imagem, texto, listas, videos e etc.
+Css é focado em design , tipo cores, sombras, tamanhos, posicionamentos e etc.
+JavaScript é focado em interações, menus interarivos, popups, validações e etc.
+
+//////////Conteudo HTML//////////
+
+<h1> Exemplo de titulo </h1>
+
+<h1> = Abertura de tag 
+</h1> = Fechamento de tag
+alt = Parametro
+<hr> = Usado para criar linha horizontal
+
+(Seletor)
+h1{
+    (Declaração) (Valor)
+    font-family: Arial;               
+    font-size: 20pt;                                      
+    color: blue;                     
+
+}
+Todo seletor tem declarações , e cada declaração é um par de propriedade e valor.
+(Toda declaração tem que terminar com ";")
+
+Estrutura basica de documento em HTML
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">                     (UTF-8 é usado para palavras que tem acentos ou "Ç")
+        <meta name="viewport"
+        content="with=device-witdh,initial-scale=1.0">   (Usado para o site ocupar 100% da escala da tela)
+        <title>Document</title>       (usado para titulo)
+
+    </head>
+    <body>
+          <h1> Olá, Mundo!</h1>
+
+
+    </body>
+</html>
+
+
+Front-end "Client-side" (é a parte em que a pessoa/cliente está vendo)
+Back-end "Server-side" (é a parte de quem vai mexer na parte do servidor)
+Full-stack (a junção de quem estuda Front-end e Back-end)
+
+
+//////////Conteudo CSS//////////
+
+@charset "UTF-8"; ------ Não é obrigatorio o uso, mas  é bom adicionar para evitar os erros de acentuação e o Ç
+
+Selecionar os codigos sem os "< >" e apertar SHIFT + TAB eu puxo os codigos para o canto da tela, e para dar um espaço de linha basta apertar TAB
+
+<style> usado para poder criar um "estilo" para uma determinada parte, sempre será adicionada na parte <head> do codigo de HTML (Mais facil usar em CSS)
+
+background-color: "cor"; ----- usado para colocar cor no fundo da pagina
+
+color: "cor"; ----- usado para colocar cor a fonte
+
+text-align: "center/left/right/..." usado para centralizar o texto ou colocar onde bem entender
+
+text-indent: 20px;  Usado para dar um espaço no começo do texto para simbolizar um paragrafo 
+
+font-family: "Arial / Sans /..." usado para poder mudar o tipo de fonte
+
+&uparrow; - Posso tambem "resumir" o codigo por exemplo &uarr; &rarr;
+&rarr; - RIGHTARROW
+&#x1F480; - Para usar os emojis eu tenho que OBRIGATORIAMENTE usar o &#X(codigo do emoji) que consigo pegar no EMOJIPEDIA ou posso usar o teclado apertando (WIN + .)
+
+<img src="PASTA/NOMEDAFOTO" alt="NOME DA FOTO"> - Para pegar imagens de outras pastas basta usar o codigo de imagem , <img src="Basta ulitizar a tecla CTRL + ESPAÇO" que automaticamente irá aparecer as imagens que estão na pasta ou em uma sub-pasta.
+
+<link rel="shortcut icon" href="icone.ico" type="image/x-icon"> Essa tag serve para adicionar um icone a pagina que estou utilizando , lembra de sempre colocar o codigo na parte de <head> BEM AQUI! </head> para ficar mais organizado.
+
+<h1></h1> = Titulo de nivel UM.    <h2> = Titulo de nivel DOIS e etc... Lembrando que a tag <h#> vai até o <h6> não adianta adicionar mais que não vai funcionar.
+
+<p></p> - Usado para criar um paragrafo que fica abaixo do titulo
+
+<p>lorem</p>Neste exemplo eu acabei usando <p>lorem</p> para criar um texto automatico do proprio html.
+
+----Para envelopar uma frase/palavra CTRL + SHIFT + P ----
+
+<u></u>Posso usar para criar textos sublinhados exemplo : <u> TEXTO </u>
+
+<adress></adress> - Serve para adicionar a fonte como se fosse um endereço de um local.
+
+<mark></mark> - Se eu quiser mudar todas as cores do marcador basta utilizar uma mark{ background-color: (cor);Que automaticamente mudara todas as cores do marcador PADRAO
+Posso mudar apenas um marcador basta usar o style na linha por exemplo <mark style=background-color: COR;> TEXTO </mark>
+
+<b></b> - Para adicionar a palavra em negrito basta usar a tag <b> e aqui dentro escrever a palavra em destaque (Não semantido)
+<strong></strong> - Para adicionar em negrito na forma certa de uso que serve para dar um sentido ao negrito (Semantico)
+
+<i></i> - Para adicionar uma palavra em italico basta usar <i> TEXTO </i> (Não semantico)
+<em></em> - Para adicionar uma palavra em italico, MAS com sentido a palavra <em> TEXTO </em> (Semantico)
+
+<small></small> - Serve para deixar a palavra pequena.
+
+<del></del> - Posso usar para poder "cortar" um texto usando a tag <del>TEXTO</del>
+
+<ins></ins> - Posso usar para sublinhar um texto usando a tag <ins>TEXTO</ins> (Semantico)
+<u></u> - Tambem posso usar a tag <u>TEXTO</u> para poder deixar sublinhado (Mesmo sabendo que essa tag pode acabar a qualquer momento)
+
+Exemplo: X20+3 - Posso usar o (X<sup>20</sup>+3)   para em equações ou para colocar os numeros/letras na parte decima.
+Exemplo: H2O - Ou tambem usar H<sub>2</sub>0 para usar os numeros/letras na parte de baixo.
+
+<code></code> - Deixa a fonte dentro da tag mais "facil" de ler <code>TEXTO</code>, so usado isso na hora de representar um codigo fonte escrito para dar exemplo
+Exemplo: 
+<code> 
+    num = int(input('Digite um numero'))
+    if num % 2 == 0:
+        print(f' 0 numero {num} é PAR')
+    else                                       
+        print(f'0 numero {num} é impar')
+    print ('fim do programa')
+        </code>
+
+<blockquote> - Serve para criar textos deslocados um pouco para dentro usado para citar coisas e o (cite=LINK) serve para quando alguem passar o mouse em cima do texto poderá clicar e ser redirecionado para o site. Exemplo: <blackquote cite= https://www.youtube.com>
+
+<abbr></abbr> - Usado para criar abreviações , que server pra quando eu passo o mouse em cima , aparece o significado de algo por exemplo:
+<abbr title="HyperTextMarkupLanguage">HTML</abbr> - Assim que passar o mouse em cima de HTML , irá aparecer o significado dele.
+<abbr title="Cascating Style Sheep">CSS</abbr> - Assim que passar o mouse em cima de CSS , irá aparecer o significado dele.
+
+<ol></ol> Serve para criar uma lista organizada exemplo:
+<ol> type="1" start="1">
+        <li>Acordo</li>
+        <li>Tomo café</li>
+        <li>Fico no pc ou arrumo casa</li>
+        <li>Faço almoço</li>
+        <li>Vou para o serviço</li>
+        <li>Trabalho muito</li>
+        <li>Volto para casa</li>
+        <li>Pego onibus</li>
+        <li>Vou para faculdade</li>
+        <li>Acabo a aula</li>
+        <li>Vou pra casa morto de cansado</li>
+</ol>
+
+O type="1" é o jeito que a lista vai se iniciar (de forma numerica ou alfabetica) e o start = "4" significa em qual letra ou numero vou iniciar a lista.
+No HTML5 não é obrigatorio fechar a tag (</li>).
+
+<ul></ul> Tambem posso criar uma lista não ordenada, por exemplo:
+<ul>
+    <li>Acordo</li>
+    <li>Tomo café</li>
+    <li>Fico no pc ou arrumo casa</li>
+    <li>Faço almoço</li>
+    <li>Vou para o serviço</li>
+    <li>Trabalho muito</li>
+    <li>Volto para casa</li>
+    <li>Pego onibus</li>
+    <li>Vou para faculdade</li>
+    <li>Acabo a aula</li>
+    <li>Vou pra casa morto de cansado</li>
+</ul>
+
+<dl></dl> - Engloba uma lista de Termo e Definições
+<dd></dd> - Descrição
+<dt></dt> - Termo
+Por exemplo:
+<dl>
+    <dt><strong>HTML</strong></dt> <!--DT = Termo-->
+    <dd><u>Linguagem de marcação para a criação de conteudo de um site</u></dd> <!--DD = Descrição-->
+    <dt><strong>CSS</strong></dt>
+    <dd><u>Linguagem de marcação para a criação de design de um site</u></dd>
+    <dt><strong>JavaScript</strong></dt>
+    <dd><u>Linguagem de programação para a criação de interatividade de um site</u></dd>
+</dl>
+
+<a></a> - Posso endereçar um link/pagina minha a um texto , essa tag tem varios atributos (target) que são as
+<a href="link" target="_blank"> usado para abrir uma pagina em outra guia
+<a href="link" target="_self"> usado para abrir o link na mesma pagina
+<a href+"link" target="framename" usado para abrir um documento a um frame nomeado e especificado
+
+Tambem posso adicionar isso á uma pasta e baixar um arquivo por exemplo:
+<a href="PASTA/TIPODEARQUIVO" download="NOMEDOARQUIVO" type="application/(EXTENSÃO DO ARQUIVO/ ZIP/ PNG / JPEG e etc...)">TEXTO</a></li>
+<a href="PASTA/TIPODEARQUIVO" type="application/(EXTENSÃO DO ARQUIVO/ ZIP/ PNG / JPEG e etc...)">Livro compactado em zip</a>
+Usamos (Download="Nome que você quer") para poder baixar o link com um nome configurado e o (type=application/###)
+
+<picture></picture> - Essa TAG me permite abrir varias sources no codigo ou varias imagens.
+
+<source:media:type> - A tag <source media type> serve para mudar o tamanho da imagem independente do dispositivo usado pelo usuario. Lembrando que as (sources) tem que estar em ordem do menor para o maior , se não o codigo nao funciona, por exemplo:
+<picture>
+<source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+<source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+<img src="imagens/foto-g.png" alt="Imagem flexivel">
+</picture>
+
+main img{ 
+    width: 100%;
+}
+Adapta toda a parte no tamanho desejado 
+
+Sempre que for criar um site tenho que ter variações de fotos igual so que com tamanhos diferentes para atender todo tipo de publico que esteja no celular/computador/notebook e etc.
+
+Audio - O source nessa parte de audio serve para seguir uma ordem de carregamento, se ele nao conseguir carregar o arquivo em MP3 ele pula direto para Wav , se nao conseguir tambem ira tentar reproduzir em Ogg, e assim sucessivamente.
+
+<audio preload="metadata" controls loop>
+
+Preload= auto/metadata/none
+Auto - Carrega o arquivo por completo antes de dar o play.
+Metadata - Faz o "DOWNLOAD" do arquivo antes de reproduzir.
+None - Não carrega nenhuma informação enquanto eu não clicar no play.
+
+Sempre na hora de criar um audio lembrar de adicionar "controls" a tag audio para ter uma barra play, pause, volume e download do audio
+
+<audio src="PASTA/NOME DO ARQUIVO" controls></audio> - Para adicionar um audio basta utilizar esse codigo junto com a pasta de onde o audio está. Formatos compativeis MP3,WAV , OGG.
+<source src="PASTA/NOMEDOAUDIO" type="audio/TIPODEARQUIVO/ OGG/ MP3/ WAV">
+<a target="_blank" href="midia/sonin.m4a" rel="external" > Posso usar isso quando um navegador ou a pessoa não conseguir reproduzir um audio, isso fara com que o audio abra en uma nova guia possobilitanto o download
+Audio/(OGG,MP3,WAV)
+WAV não é recomendado porque o audio é mais pesado para o site
+
+VIdeo - Posso adicionar um video local da minha propria maquina.
+
+<video width="Tamanho" poster="LINK DE IMAGEM OU UMA IMAGEM DE UMA PASTA" controls>
+<source  controls src="midia/meu-video.mp4" type="video/mp4">
+</video>
+
+<video src="LOCAL DO VIDEO" controls></video> Forma simples e errada de adicionar um video
+
+O "poster" como o nome ja diz, serve para colocar uma capa no video ou no caso uma imagem de primeiro frame.
+
+<a target="_blank" href="midia/meu-video.mp4" rel="external">aqui</a> para ter acesso a cada um deles (Igual no audio tambem posso baixar o video em outra guia)
+
+<iframe width="500" height="315" src="https://www.youtube.com/embed/XpqH6Ir-MYM?si=vKQsbo2Y9XBInGYF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Tambem posso pegar videos do proprio youtube/vimeo, pegando da parte "incorporar" e é so colar o link no site que ja estará funcionando.
+
+No style eu posso colocar uma (tag{}) por exemplo 
+    body{
+        background-color: black;
+        color: whitesmoke;
+        }
+    } 
+Posso usar isso para separar as cores ou estilo de cada tag separadamente, mas essa tag de style tem desvantagens porque ela ocupa muitas linhas de codigo, essa tecnica pode ser mais util para APENAS UMA pagina. (Melhor usar na CSS).
+
+O style em linhas separadas serve para mudar a linha inteira para uma cor especifica (Geralmente não é recomendado usar por conta de organização, questão pessoal minha.)
+
+<link rel="stylesheet" href="style.css"> <Sempre lembrar de criar uma tag link para poder adicionar um css na pagina.
+
+Nas paginas das CSS não é obrigatorio colocar essa regra, mas em alguns casos para usar acentos ou até mesmo o "Ç" é obrigado
+
+Nas partes de cores existem
+
+Decimais: 0 1 2 3 4 5 6 7 8 9 : 
+rgb(0, 0, 255); color: rgb(255, 255, 255) : - Isso é um codigo de cor em DECIMAL
+
+Hexadecimais: 0 1 2 3 4 5 6 7 8 9 A B C D E F 
+(Azul) #0000ff, (Branco)#ffffff : - Isso é um codigo de cor em HEXADECIMAL
+
+HSL : (Azul) hsl(240, 100%, 50%); color: (Branco) hsl(0, 0%, 100%); - Isso é um codigo de cor em HSL (Hue, Saturation, Luminosity)
+
+Tambem posso misturar decimal/heximal/HSL , mas eu sempre acho melhor usar apenas um desses:
+#708b60; color: hsl(0, 0%, 100%);
+
+Representação das cores por hexadecimais R:00 G:00 B:ff (o FF significa que a cor é mais forte[clara] e o AA a cor mais fraca[escura])  que significa a cor #(r)00(g)00(b)f=#0000ff
+RGBA= Red Green Blue Alpha(transparencia), HSLA= Hue, saturation, Luminosity , Alpha (transparencia).
+
+background-image: linear-gradient(45deg, #9702D7 3%, #CC009E, #E00176, #EA0351, #EF342F, #F48D0A, #F7B20C); - Sempre escolher a direção do degradê primeiro e depois escolher as cores, posso usar o background-image: linear-gradient / radial-gradient,circle. E ainda posso colocar uma porcentagem na frente das cores para determinar o quanto vou querer de tal cor no degradê
+background-attachment: fixed; - Sempre lembrar de arrumar o codigo de degradê para não ficar bugado no site.
+
+<main> define o conteúdo principal dentro do <body> em seu documento ou aplicação. Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação.
+
+box-shadow: Largurapx Alturapx Espalhamentopx Cor; - Usado para criar sombra em uma "caixa" criada por mim no CSS
+
+width(Largura): Tamanhopx; - Esse é a largura que vou querer o espaço do meu texto.
+
+padding: Tamanhopx; - Aumenta o espaçamento por uma area ampla
+
+margin: auto ; - Sempre centraliza independente do tamanho da tela
+
+text-shadow: *px *px *px Cor ; - Sempre seguir a orden, Text-shadow: (Deslocamento lateralpx),(DescolamentoBaixopx), (Espalhamentopx), (cor);
+
+text-align: center; Centraliza o texto ou coloca ele onde eu precisar . Isso é adicionado na parte da CSS
+
+border-radius: 20px; /* Arredonda as bordas */
+
+h1 - Posso escolher mais de uma tag <h1> <h2> <h3> para ter a mesma fonte (mas acho melhor fazer tudo junto para não ter problema) 
+
+//////////Cores////////// 
+
+(O uso minimo para criar uma paleta é 3 e no maximo 5 cores, NUNCA ultrapassar esses valores, se não o site pode ficar muito poluido)
+Cores primarias : Amarelo, Vermelho e Azul
+Cores secundarias : Laranja , Violeta e Verde
+Cores terciarias : Amarelo-esverdeado, Amarelo-alaranjado, Vermelho-alaranjado, Vermelho-arroxeado, Azul-arroxeado, Azul-esverdeado.
+
+//////////Temperaturas de cores//////////
+
+Cores Quentes: Amarelo, Amarelo-alaranjado, Laranja, Vermelho-alaranjado, Vermelho, Vermelho-arroxeado
+
+Cores Frias: Roxo, Azul-arroxeado, Azul, Azul-esverdeado, Verde, Amarelo-esverdeado
+
+Cores Complementares: Sempre usar a cor oposta no "circulo cromatico" ----- Bom usar quando se tem um fundo de uma cor e o texto de outra cor
+
+Cores Análogas: Sempre usar as cores ao lado no "circulo cromatico"
+
+Cor Análogas e complementares: Junção das duas tecnicas de cores que da uma harmonia e uma cor de constraste.
+
+Cores Análogas Relacionadas: Pegar duas cores vizinhas, pula uma cor ao lado e perga a terceira cor do circulo cromatico , por exemplo Amarelo, Amarelo-alaranjado, (L̶a̶r̶a̶n̶j̶a̶), Vermelho-alaranjado. No caso usariamos apenas o Amarelo, Amarelo-alaranjado e Vermelho-alaranjado.Posso escolher o lado que vou usar para esquerda ou direita.
+
+Cores Intercaladas: Posso usar tambem para intercalar as cores, por exemplo Amarelo, (A̶m̶a̶r̶e̶l̶o̶-̶a̶l̶a̶r̶a̶n̶j̶a̶d̶o̶), Laranja, (V̶e̶r̶m̶e̶l̶h̶o̶-̶a̶l̶a̶r̶a̶n̶j̶a̶d̶o̶), Vermelho. Fica uma paleta mais seca e dura mas em alguns casos pode ser bom utilizar.
+
+Cores Triadicas: É uma tecnica que se usa pulando três cores o circulo cromatico, usando num formato 3x3, selecionando 3 cores.
+
+Cores em quadrado: É uma tecnica que se usa pulando duas cores no circulo cromatico 2x2, selecionando 4 cores.Usado para escolher cores fortes e bem balanceadas.
+
+Cores tetradicas: Isso é uma tecnica que faz a junção de 2 cores complementares , por exemplo Verde>Vermelho e Laranja>Azul , assim formando uma paleta de 4 cores, que conversam entre si.
+
+Monocromia: São cores modificadas pela saturação e luminosidade de uma cor. Pode ser usado para fazer degradê.
+
+(Um bom site para poder ver as paletas de cores mais perfeitamente é o Adobe Colors / Paletton / Coolors)
+
+//////////Estudo basico da Tipografia//////////
+
+Como eram feito os livros antigamente?
+R= Os monge copistas , pegavam os livros originais, e reescreviam em livros em brancos e eles demoravam meses para serem feitos, porque eles eram copiados á mão.
+
+O Gutenberg e sua maquina no Seculo XV.
+R=Ele criou uma Prensa de Tipos Móveis, que era uma maquina usada a tinta para ajudar os Copistas, mas a maquina você colocava o papel em baixo , selecionava letra por letra e por cima ia uma prensa com tinta e assim saía a copia perfeita do livro.
+
+A tipografia vem da palavra grega TIPO =  týpos / GRAFIA = graphía , que significa o estudos de tipos ou das letras.
+
+//////////Anatomia dos Tipos//////////
+
+Tipo = como vou desenhar cada uma das letras, como vou demonstrar o significado do produto.
+Sempre que vão criar uma fonte nova ele começam pela letra "x" por causa do tamanho das outras letras, eles chamam isso de (altura-x), e para as letras maiusculas tem o nome de (Altura das maiusculas), e as letras minusculas que vazam um pouco e são quase do tamanho das maiusculas tem o nome de (Ascedente), e tem o nome dos vazamentos para baixo que se chamam (Descendente), e a soma de todas as alturas se chamam (Corpo).
+
+//////////Anatomia do Tipo//////////
+
+Serifa = todas as pontinhas das letras , são um pequeno tracinho que tem em algumas fontes, e elas servem para criar uma linha imaginaria que nosso cerebro cria que facilita a leitura das palavras
+
+//////////Anatomia Geometrica//////////
+
+Haste = seria meio que a base de uma letra escrita.
+Filete = é a parte que une duas hastes ou um arco.
+Esporão = Algumas fontes tem isso para meio que elas ter uma base de onde ficarem apoiada.
+Terminal = um elemento que não esta preso em outro lugar, pode ser facilmente confundido com braços e penas das letras.
+Braço = Sai da haste e se eleva pra cima.
+Perna = As vezes sai da haste e as vezes sai do braço e isso se chama perna
+Pé = Vem seguinte á perna ou pode se chamar tambem de apoio da letra
+Algumas letras tem barriga  por exemplo a letra "b", outras ja tem uma Espinha por exemplo a letra "s".
+Olho = a parte vazia dentro das letras 
+Orelha = a parte de cima de uma letra um mini traço que existe na letra "g" (Não sao todas a fontes que tem isso).
+Cauda = aquelas sobrinhas que existem na parte de baixo de uma letra por exemplo na letra "g e q".
+Glifo = 1 letra
+Fonte = Conjunto de uma determinada familia de Glifos, elas tem varias formas que são as seguintes, light, normal, seminegrito, negrito e extranegrito, geralmente todas as fontes tem normal e negrito, mas tem algumas que nem tem negrito é so o normal mesmo, mas algumas outras tem essa variação  de familias tipograficas.
+
+//////////Categoria de fonte//////////
+
+(Caso esteja com duvidas sobre combinações de fonte, é so acessar "CSS web safe font combinations, site W3Schools.com)
+(Nunca esquecer de usar site para textos com preto e branco para fundos ou textos.)
+Fonte Serifada = Tem serifa, recomendado para textos impressos.
+Fonte Sans-Serif = Não tem serifa, recomendado para sites com leitura muito prolongada.
+Fonte Monoespaçada = Todos os Glifos tem a mesma largura, mas pode ser com Serifa ou sem Serifa.
+Fonte HandWriting = Tenta simular a escritura à mão
+Fontes Comemorativas ou Fontes Display = Não se preocupa a obedecer as regras anatomicas, são fontes comemorativas geralmente são fontes que te levam ideia a filmes por ex StarWars, HarryPotter, Fortnite, GodOfWar e etc...
+
+//////////Ordem para usar shorthand//////////
+ 
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+
+Eu posso transformar todos esses codigos de fonte colocando todos em ordem com essa tag : 
+
+font: italic bolder 1.6em 'Times New Roman',Times, serif;
+
+Nunca é bom utilizar mais de 3 a 4 fontes no site para não ficar muito bagunçado,um pra grandes titulos, outros pra destaques e uma fonte normal.
+
+//////////Fontes Internas e Externas//////////
+
+Fontes Internas
+
+Posso retirar fontes de um site por exemplo o GoogleFonts, pego a fonte em formato EMBED e em @import, e adiciono em meu arquivo CSS (sempre no começo do codigo) por exemplo :
+"@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');"
+E sempre lembrar de adicionar a "font-family" que ja vem junto na pagina onde pego o codigo da fonte por exemplo: font-family: "Roboto", sans-serif; , esse é a tag de font-family dessa fonte em especifica.
+
+Fontes Externas
+
+São fontes que eu baixo de algum site por exemplo o DaFonts, escolho uma fonte para iniciar um projeto e começo a desenvolve-la
+
+    Tipos de format , tanto quanto a parte dentro do url e format dentro dos () tem que adicionar ('') exemplo src: url ('NOME DA FONTE') format('FORMATO DA FONTE');
+    Esses tipos de formatos podem varias de navegador, para navegador, mas geralmente OTF e TTF funcionam em todos os navegadores, lembrar de sempre procurar os tipos de formatos usados nos navegadores.
+    opentype = otf
+    truetype = ttf
+    embedded-opentype
+    truetype-aat = Apple Advanced Typography
+    svg 
+
+Sempre organizar as  fontes em uma pasta para não sair da organização e sempre lembrar de colocar o diretorio da pasta no url por exemplo: src: url('NOME DA PASTA / NOME DA FONTE') format(' Tipo do formato');
+
+Extensão do google para achar fontes em um determinado site o nome da extensão é FontsNinja
+
+Tambem consigo identificar fontes pelas fotos usando esses seguintes sites: whatfontis, fontsquirrel e myfonts.
+
+
+//////////Alinhamento de texto//////////
+
+text-align: é usado para alinhar os textos de uma pagina.
+ left = deixa o texto a esquerda
+ right = deixa o texto a direita
+ center = centraliza o texto
+ justify = deixa o texto entre a esquerda e a direita o deixando mais organizado na hora de ler 
+
+ (Nunca alinhar textos usando HTML, sempre usar CSS)
+
+E na parte de HTML tenho que adicionar um (id="NOME DO ID") para poder estar criando a identidade dele.Usando a # no CSS na frente de uma tag eu posso dar um ID para poder identificar essa tag em especifica.
+
+Nunca usar o mesmo ID em outra linha de comando, mesmo que funcione.No lugar de ID vou usar CLASS
+ID = Unico
+CLASS = multiplo
+Resumindo tudo que é ID em HTML é #.  HTML ID = # EM CSS
+E tambem é a mesma coisa : HTML é class = . em CSS
+
+Resumindo as simbologias da CSS (Seletores Personalizados)
+# = ID
+. = CLASS
+: = Pseudo-Class
+:: = Pseudo-Elementos
+> = Children
+
+Eu posso ter 2 classes em um elemento a mesma coisa para um ID.(Sempre separar os elementos da class por "espaços". Mas o ID sobrepõe as configurações de classe.
+
+Caso eu queira deixar uma parte do texto destacada com a cor de um titulo para poder mostrar melhor eu uso a tag <span>
+
+
+//////////Pseudo Classes//////////
+
+São separados por um :
+Sempre tem que estar relacionadas á um ID ou a uma CLASSE
+Elas tambem servem para definir estados de elementos dentro da HTML 
+
+//////////Pseudo Elementos//////////
+
+São separados por um ::
+
+//////////Modelos de caixa//////////
+
+São aplicados em HTML e em CSS, é um conjunto que facilita a organização por partes do site, eu posso acabar colocando uma caixa dentro da outra e da outra e etc...Esse termo é chamado de aninhamento. Todo modelo visivel em um site é em modelo de caixa
+
+height: Altura
+width: Largura
+Quando se junta esses dois o termo usado é Box-sizing
+
+display:inline; - Usando isso eu transformo um modelo de box-level em um modelo inline-level. Se eu adicionar esse codigo eu não posso ter height e width
+display:block; - Usando isso eu transformo um modelo inline-level em um modelo box-level.
+display:inline-block; - Tem as caracteristicas de um inline e block , assim posso mudar o tamanho e largura mesmo ele sendo inline.
+
+border: Borda que fica dentro da caixa
+
+padding: Alcolhoamento ou preenchimento (sempre é separado por 4 partes ou posso usar só um pra simplificar, e ele sempre fica em ordem de relogio Cima, Direita, Baixo e Esquerda)
+padding-top: Cima
+padding-rght: Direita
+padding-bottom: Baixo
+padding-left: Esquerda
+padding: 10px 10px 10px 10px; - Simplificada por shorthand igual a ordem que está no exemplo acima.
+padding: 10px; - Se as 4 medidas forem iguais tambem posso usar apenas com um tamanho.
+padding: 10px 20px; - Se eu ussar 2 valores desse jeito ele vai separa por (Cima e baixo), (Direita e Esquerda)
+
+
+margin: Margem que é um espaçamento que fica fora da caixa (O mesmo é usado no margin)
+margin-top: 10px;
+margin-right: 10px;
+margin-bottom: 30px;
+margin-left: 10px;
+margin: 10px 10px 30px 10px; - Apenas simplificado por shorthand
+margin: 10px auto 30px auto; - Posso automaticamente centralizar uma margin usando desse jeito
+margin: auto; - Isso é usado caso eu queira centralizar uma "caixa" no meio da tela
+
+outline: Contorno ou Traçado que fica foca do elemento (Muito parecido com a border, e sempre vai ficar entre a "border e margin")
+outline: 5px dashed goldenrod; - Simplificado com shorthand 
+
+border-width: espessura da borda
+border-style: estilo da borda
+border-color: cor da borda
+border: 10px solid black; - Posso simplificar usando uma shorthand
+
+//////////Tipos de caixa//////////
+
+box-level:
+Sempre se inicia em uma linha nova
+Sempre ocupa a largura total da tela
+Essa tags são do tipo box-level: <div>, <h1>-<h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>.
+O <div> é mais usado em box-level
+
+
+inline-level:
+Não pula para a proxima linha,sempre pula pro lado do texto terminado, do tamanho exato pra conter o conteudo do elemento,e ele continua o conteudo sem quebra de linha, diferente do box-level.
+Essas tags são do tipo inline-level: <span>, <a>, <code>, <small>, <strong>, <em>, <sub>-<sup>, <label>, <button>, <input>, <select>
+O <span> é mais usado em inline-level
+
+user agent = configuração feita pelo navegador
+
+display: block; = Elemento do estilo box-level. a parte do (block) é box-level
+
+//////////Grouping Tags//////////
+
+<header> - Cabeçalho do site , parte do conteudo dele
+<main> - Conteudo principal
+<footer> - Rodapé do site
+<article> - artigo
+<aside> - Conteudo relativo ao artigo
+
+//////////Sombras nas Caixas//////////
+
+box-shadow: (DeslocamentoHorizontal)px (DeslocamentoVertical)px (Espalhamento)px (cor)black; - Modelo shorthand
+Sempre que for fazer sombra , na parte da cor sempre abaixar a opacidade (transparencia).
+
+border-radius: 10px 10px 10px 10px; - Posso usar para poder arredondar uma Caixa de texto ou independente da caixa que eu for fazer.
+border-radius: 20px 0px; - Tambem posso usar porque assim consigo mudar a borda da parte SuperiorEsquerda/InferiorDireita e a parte SuperiorDireita/InferiorEsquerda.
+
+border-image-source: url('Pasta/NomeDoArquivo');
+border-image-slice: 25 ; - Com isso eu consigo dividir varias vezes a imagem "borda"
+border-image-repeat: repeat; - Com isso eu consigo repetir varias vezes a imagem "borda"
+border-image: url('Pasta/NomeDoArquivo') "Tamanho" repeat/streeh/etc...;
+Usando isso eu consigo criar uma borda personalizada, sempre tenho que criar uma linha de codigo de border: para poder usar essa borda personalizada.
+
+
+//////////Git e Github//////////
+
+Repositorio Local e Remoto
+
+Git - Um Repositorio Local que pode ser um Gerenciador de versões, que guarda versões dentro do computador, usado mais para codigos.
+
+GitHub - Repositorio Remoto
+
+Um depende do outro para ser usado, mas não obrigado
+Pegar o Repositorio do Git e jogar no GitHub.
+
+//////////GitHub//////////
+
+Lembrar de sempre salvar no GitHub.'
+
+Push origin - Serve para adicionar "salvar" meu repositorio no github.
+
+//////////Adicionando imagens de fundo//////////
+
+Ponto de Partida - as imagens sempre se iniciam no Canto Superior Esquerdo.
+
+background-image: url(NomeDaPasta/Arquivo); - Usando a função (URL) eu consigo adicionar imagens de fundo meu site.
+
+background-image: url(https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQw7W5msnkiCnX25IlGx4gaEJw3rB_lFSxQkKodlPg2CqIgibXBZBlwxiKFq6h1ymNu); 
+Posso adicionar uma imagem de fundo usando link de imagens.
+
+background-size: Tamanhopx Tamanhopx; - Adiciona um tamanho especifico para uma imagem, caso eu não queira o tamanho por padrão da imagem que esto usando. 
+background-size: contain; - Deixa a imagem de fundo do tamanho original.
+background-size: cover; - Ele cobre toda a tela inteira mesmo que pra isso tenha que cortar a imagem.
+background-size: auto; - O navegador que arruma o tamanho da imagem de fundo.
+
+background-repeat: no-repeat; - Faz com que a imagem não se repita varias vezes no site 
+background-repeat: repeat-x; - Faz a repetição para os lados (Eixo X).
+background-repeat: repeat-y; -  Faz a repetição para os lados (Eixo Y). 
+
+background-position: Posição Posição; - Usando isso consigo selecionar de onde minha imagem vai ser o ponto de partida.
+Sendo eles, Top, Right, Center, Bottom, Left. Posso usar até duas posições se quiser, Top-Right, Left-Center, Bottom-Center e etc...
+
+height: 98vh;  Unidade de viewport, sempre lemnbrar de configurar
+
+background-attachment: fixed; - Deixa a imagem fixa na tela 
+
+max-width: 400px; - Aumenta o tamanho maximo de largura de uma imagem/texto etc e com isso posso usar para posicionar meu conteudo 
+
+Shorthand background
+    background-color: (COR)
+    background-image: (URL)/(linear-gradient)
+    background-position: (center/top/left/right/bottom),(center/top/left/right/bottom)
+    background-repeat: (repeat), (no-repeat), (repeat-y), (repeat-x)
+    background-attachment: fixed
+background-size: [size] - Caso eu crie uma shorthand tenho que adicionar ele em outra linha separada.
+
+//////////Alinhamento Vertical//////////
+
+position: relative; - Todo posicionamento de um boxing é relativo, á parte de fora, tambem é usado no id=container
+
+position: absolute; - A parte de dentro. Se for absoluta eu posso mudar o posicionamento usando os seguintes parametros, é usado no id=conteudo.
+left: 100px;
+top: 200px;
+
+transform: translate(20px,20px); - Com isso consigo posicionar onde quiser lembrando que (Numeros negativos= move para Esquerda/Cima), (Numeros positivos= move para Baixo/Direita)
+
+text-transform: uppercase; - Deixa as letras em letra maiuscula.
+
+//////////Tabelas//////////
+
+Para usar de base uma tabela, é bom usar o Excel para poder criar uma tabela em HTML e CSS.
+
+Todas as tabelas em HTML, as tabelas mais simples.
+
+HIERARQUIA DE TABELAS SIMPLES
+            table = tabela
+            table row = linha de tabela
+            table header = cabeçalho de tabela
+            table data = dado de tabela
+
+<th> = Table Header / Cabeçalho da tabela
+<tr> = Table Row / Linha da tabela / Não é obrigatorio usar fechamento de tag
+<td> = Table Data / Dados da tabela / Não é obrigatorio usar fechamento de tag
+
+border: ()px solid black - Posso colocar uma borda na tabela , lembrando que tenho que colocar a borda no <td>
+border-collapse: collapse - Faz a borda da tabela ficar colada. Lembrar de adicionar no style, table{}
+border-collapse: separated - Faz a borda da tabela ficar separada. Lembrar de adicionar no style, table{}
+
+text-align : - Posso organizar minha tabela em alinhamento horizontal
+vertical-align: top - Posso organizar minha tabela em alinhameto vertical
+
+(TAG):nth-child(odd) - Assim adiciono listras nas linhas impares.
+(TAG):nth-child(even) - Assim adiciono listras nas minhas pares. 
+
+Se a hierarquia não for obdecida, a tabela pode ter dados fora ou dentro dela.
+
+ANATOMIA PARA TABELA GRANDE
+    table
+        caption = "Legenda da tabela"
+            thead = tr / td / th
+            tbody = tr / td / th
+            tfoot = tr /td / th
+
+scope="col" - Usado para colunas
+scope="colgroup" - Usado em grupo de colunas
+scope="row" - Usado em uma linha
+scope="rowgroup" - Usado em grupo de linhas
+
+<td colspan="(Numero de colunas)">B</td> - Posso usar isso para preencher um "vazio" numa linha da lista.
+<td rowspan="3">F</td> - Posso usar para preencher um "vazio" numa coluna da lista.
+
+Posso abrir uma tag de <COLGROUP> para poder mudar uma coluna inteira.
+
+        <colgroup>
+            <col class="cnome">
+        </colgroup>
+
+Posso usar um Id de Container para poder, deixar a tabela mais responsiva para todos os aparelhos.
+(Isso na pagina de Style)
+container{
+    overflow-x: auto;
+}
+
+////////// IFRAMES //////////
+
+O que é uma iframe?
+A letra "i" do iframe, significa inline, resumindo é um frame inline.
+
+
+Posso usar a tag iframe para criar uma janela com um site, dentro do meu proprio site
+<iframe src="LINK" frameborder="0">
+
+Tem alguns sites que tem proteção e não consegue adicionar sites nele.
+
+E nem todos os navegadores de celular tem suporte ao iframe e posso colocar uma mensagem avisando oque era pra ter no lugar do iframe po exemplo
+
+<iframe src="https://cursoemvideo.com" frameborder="0"> [Seu navegador não é compativel] </iframe> - Posso adicionar uma mensagem.
+<iframe src="https://cursoemvideo.com" frameborder="0"> <a target:_blank href:"https://cursoemvideo.com"> Curso em video</a> . Ou posso fazer assim para exibir um link em vez de mensagem
+
+Por padrão um iframe e de 300x150px
+
+Eu posso mudar os tamanhos dos iframes
+<iframe height="500" src="https://cursoemvideo.com" frameborder="0"></iframe>
+
+Caso faça uma configuração de iframe na CSS e outra no proprio iframe, a CSS vai substituir a config inline do iframe
+
+Pode ser que alguns conteudos de iframe tenham barra de rolagem (Scroll), e caso precise eu posso fazer algumas alterações nele usando o parametro
+
+scrolling="auto" - Seleciona automaticamente a barra ou a desabilita
+scrolling="yes" - Sempre vai ter a barra
+scrolling="no" - Nunca vai ter a barra
+
+Caso eu queria adicionar minha pagina ou outra pagina dentro de um iframe tenho que usar o parametro (name="") dentro da tag. Por exemplo:
+
+    <iframe name="(NOME)" src="" frameborder="1">
+        <p>Infelizmente seu navegador não é compativel com isso</p>
+    </iframe>
+
+E tenho que lembrar de adicionar o nome (name="NOME") onde eu for usar por exemplo no:
+
+        <a href="#" target="NOME">Terceira Pagina</a>
+
+Tambem posso adicionar um HTML dentro de uma iframe usando o parametro srcdoc="TAGS" : Lembrando que tenho que respeitar a abertura e fechamento de tags, segue o Exemplo:
+
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções acima </h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quaerat saepe accusantium modi possimus! Dolor sapiente dolorum amet repellat! Sunt exercitationem pariatur eum qui optio minima laboriosam consectetur modi quidem.</p> <img width=400px height=200px src='imagem/gorila.jpg'>" frameborder="1">
+
+Para proteger meu iframe de sites malicioso de terceiros que adiciono a minha iframe tenho que usar o seguinte parametro sandbox="sandbox":
+
+    <iframe src="paginas/pagina004.html" frameborder="1" sandbox="sandbox"></iframe> - (Mas isso é assunto para outro capitulo do curso).
+
+sandbox="sanbox" - Todas as proteções de segurança no maximo.
+Posso acabar habilitando so algumas se quiser
+
+    <iframe src="paginas/pagina004.html" frameborder="1" sandbox="allow-scripts allow-same-origin allow-forms"></iframe> - (Mas isso é assunto para outro capitulo do curso).
+
+
+////////// Formularios //////////
+
+Todo formulario tem que estar entre as tag <form>
+
+Todo formulario tem um mini script de javascript rodando nele.
+
+Para criar uma caixa de texto basta usar a tag <input type="text" name="" id="">
+Para criar um botão basta usar a  tag <input type="submit" value=""> - No (value="Texto") tenho que adicionar uma palavra ao botão.
+
+Não existe uma ligação entre o texto e a caixa de texto por enquanto.
+
+Posso desabilitar as sugestões de login usando <form autocomplete="off"> dentro da primeira tag do form.
+
+Posso mandar um cadastro usando  <form action="NomeDoArquivo.(Linguagem)">  
+
+name="" é mais util para HTML e PHP .
+id="" é mais util para JavaScript e uso do label.
+
+- SEMPRE relacionar o <label> com o meu input -
+Para eu poder fazer uma ligação/relação  neles eu tenho que envelopar minha palavra do formulario:
+
+ <p><label for="inome">Nome:</label>
+ <input type="text" name="nome" id="inome"></p>
+
+
+Existem 2 metodos simples , para envio de formulario
+
+1 Metodo = ou metodo padrão e o metodo GET - method="GET" - que coloca os dados na URL
+<form action="cadastro.php" (method="GET")>
+
+2 Metodo = POST - que ja é o metodo que não fica os dados na URL
+<form action="cadastro.php" method="POST">
+
+Mas mesmo assim os dados continuam visiveis, mas não na url, e tem uma maneira de guardar esses dados
+Na pagina do formulario basta clicar em botão direito > inspecionar (ou apertar CTRL + SHIFT + I) e depois clicar em Network > Headers.
+
+Mas quando usar GET ou POST
+GET = quando os dados não forem sensiveis por exemplo, NOME, SOBRENOME, PESO, ALTURA e etc, e o GET pode enviar até 3mil bytes (3mil letras).
+POST = quando os dados forem sensiveis por exemplo  Numero do cartão de credito , CEP, Endereço, Fotos e etc, e o POST pode ultrapassar os 3mil bytes.
+
+Posso criar senhas "criptografadas" usando:
+            <label for="nome">Senha:</label>
+            <input type="password" name="nome" id="nome">
+
+Quando um campo for obrigatorio eu tenho que adicionar (required) dentro da caixa de texto/senha (input) por exemplo:
+
+        <p>
+            <label for="usu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required>
+        </p>
+
+Tambem posso adicionar um tanto de caracteres minimo e maximo usando (minlenght="valor") e (maxlenght="valor") por exemplo:
+
+        <p>
+            <label for="usu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15">
+        </p>
+
+Caso queira mudar o tamanho da caixa do formulario tenho que usar o (size="valor") por exemplo: (Obs: isso é apenas visual , só muda o tamanho da caixa de acordo com os caracteres)
+
+        <p>
+            <label for="usu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10">
+        </p>
+
+Posso adicionar uma "indicação" sobre oque o usuario tem que colocar em tal caixa por exemplo:
+
+        <p>
+            <label for="usu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="username">
+        </p>
+
+Posso usar o (autocomplete) para varias coisas , para completar nome de usuario, endereço e etc...
+
+Posso usar uma caixa apenas para numeros usando:
+
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10"> - min="ValorMinimo"  -  max="ValorMaximo" (Usado apenas com numeros)
+
+Posso utilizar numeros com (virgula) 0,1/0,2 e etc usando o step="valor" :
+
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0,5">
+
+Posso adicionar uma coisa ja iniciando com um valor especifico usando value="valor" : - Mas neste caso ele substitui o placeholder
+
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" value="5" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+
+Posso adicionar datas completas com dd/mm/aa usando:
+
+            <label for="idia">Dia</label>
+            <input type="date" name="dia" id="idia">
+
+Posso fazer um agrupamento de todas as informações (cria uma caixa em volta) usando a tag <fieldset>
+
+E posso colocar uma anotação a esse agrupamento usando a tag <legend>PALAVRA<\legend>
+
+Caso eu queria criar uma checkbox (para criar opções de marcar) eu posso usar
+        <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> 
+
+Tambem posso criar (radio) que são checkbox so que em forma de circulo (Sempre lembrar de quando for em "radio" tenho que colocar o mesmo "name" nelas)
+    <input type="radio" name="sexo" id="ismas" value="M"><label for="smas">Masculino</label> 
+
+Posso deixar uma opção ja marcada usando a tag "checked" dentro do codigo por exemplo: (Obs so posso usar "checked" em mais de uma opção apenas quando for em checkbox)
+    <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut" checked>Futebol</label>
+
+Para criar uma barra de seleção basta usar: (Por padrão ela vem com os valores min=0 max=100 mas posso mudar isso)
+    <input type="range" name="nivel" id="inivel">
+
+Posso mudar os valores dela usando o min/max igual visto anteriormente:
+    <input type="range" name="nivel" id="inivel" min="1" max="5">
+
+Tambem posso iniciar de uma posição especifica do range usando o value
+    <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+
+Posso mandar um arquivo via formulario usando input file
+    <input type="file" name="foto" id="ifoto">
+
+
+Para criar uma lista de seleções posso usar:
+
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+
+Tambem posso separar por partes por exemplo: (Usando label como atributo dentro de uma tag para "separar" o grupo)
+
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+
+Posso criar uma lista de modo que a pessoa escreve ou seleciona a opção usando: (Sempre lembrar de criar "list="Nome"" e o "id="Nome"")
+
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Professor</option>
+                <option>Faxineiro</option>
+                <option>Banqueiro</option>
+                <option>Advogado</option>
+            </datalist>
+
+Para criar uma caixa de mensagem/texto basta usar a tag textarea por exemplo: (Sempre que tiver que usar essa tag)
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="100" rows="10"></textarea>
+
+Posso escolher em um formulario para selecionar numeros usando:
+
+<input type="number" name="n2" id="in2">
+
+Consigo fazer mostrar o valor de uma seleção usando: (Isso ja é mais na parte de JavaScript)
+
+oninput="{ID USADO}.innerHTML = Number ({ID USADO}.value)
+
+Ou
+
+        <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number (inum.value)">
+        <output id="ival">5</output>
+
+
+
+
+

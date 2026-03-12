@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <hr>
+    <h2>Codigo-fonte / Pre-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é ecrito em linguagem JavaScript.</p> <!--Deixa a fonte dentro da tag mais "facil" de ler <code>TEXTO</code>-->
+    <pre> <!--Posso usar para organziar as quebras de codigo-->
+        <code> <!--Usado para codigo-fonte-->
+    num = int(input('Digite um numero'))
+    if num % 2 == 0:
+        print(f' 0 numero {num} é PAR')
+    else                                        <!--Selecionar os codigos sem os "< >" e apertar SHIFT + TAB eu puxo os codigos para o canto da tela-->
+        print(f'0 numero {num} é impar')
+    print ('fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo : <q>o computador é um burro muito rapido</q></p> <!--A tag <q>TEXTO</q> serve para poder dar sentido a alguma palavra em vez de usar ("")-->
+    <h2>Citações completas</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium molestiae tempore, fugit deserunt autem in eum harum ad! Earum cumque nihil laudantium dignissimos non at amet laborum tempore delectus. Aperiam.</p>
+    <blockquote cite= https://cdn.univicosa.com.br/>  <!--Serve para criar textos deslocados um pouco para dentro usado para citar coisas e o (cite=LINK) serve para quando alguem passar o mouse em cima do texto poderá clicar e ser redirecionado para o site-->
+        Univiçosa entre os melhores Centros Universitários de Minas Gerais.
+    </blockquote>
+    <img src="https://cdn.univicosa.com.br/img/logos/novo/univicosa_horizontal.png" width="400px" height="100px" alt="LogoUniviçosa">
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperTextMarkupLanguage">HTML</abbr> e <abbr title="Cascating Style Sheep">CSS</abbr> e estou adorando!</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+</html>
