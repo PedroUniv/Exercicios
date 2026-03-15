@@ -683,7 +683,7 @@ Para proteger meu iframe de sites malicioso de terceiros que adiciono a minha if
 
     <iframe src="paginas/pagina004.html" frameborder="1" sandbox="sandbox"></iframe> - (Mas isso é assunto para outro capitulo do curso).
 
-sandbox="sanbox" - Todas as proteções de segurança no maximo.
+sandbox="sandbox" - Todas as proteções de segurança no maximo.
 Posso acabar habilitando so algumas se quiser
 
     <iframe src="paginas/pagina004.html" frameborder="1" sandbox="allow-scripts allow-same-origin allow-forms"></iframe> - (Mas isso é assunto para outro capitulo do curso).
