@@ -1,2 +1,2 @@
 # Exercicios
-Exercicios HTML
+Exercicios HTML e CSS
