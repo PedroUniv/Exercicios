@@ -1,2 +1,2 @@
 # Exercicios
-Exercicios HTML e CSS
+Alguns documentos para estudo basico de HTML e CSS
