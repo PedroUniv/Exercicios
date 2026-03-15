@@ -70,7 +70,7 @@ font-family: "Arial / Sans /..." usado para poder mudar o tipo de fonte
 &rarr; - RIGHTARROW
 &#x1F480; - Para usar os emojis eu tenho que OBRIGATORIAMENTE usar o &#X(codigo do emoji) que consigo pegar no EMOJIPEDIA ou posso usar o teclado apertando (WIN + .)
 
-<img src="PASTA/NOMEDAFOTO" alt="NOME DA FOTO"> - Para pegar imagens de outras pastas basta usar o codigo de imagem , <img src="Basta ulitizar a tecla CTRL + ESPAÇO" que automaticamente irá aparecer as imagens que estão na pasta ou em uma sub-pasta.
+<img src="PASTA/NOMEDAFOTO" alt="NOME DA FOTO"> - Para pegar imagens de outras pastas basta usar o codigo de imagem , <img src="Basta utilizar a tecla CTRL + ESPAÇO" que automaticamente irá aparecer as imagens que estão na pasta ou em uma sub-pasta.
 
 <link rel="shortcut icon" href="icone.ico" type="image/x-icon"> Essa tag serve para adicionar um icone a pagina que estou utilizando , lembra de sempre colocar o codigo na parte de <head> BEM AQUI! </head> para ficar mais organizado.
 
@@ -89,7 +89,7 @@ font-family: "Arial / Sans /..." usado para poder mudar o tipo de fonte
 <mark></mark> - Se eu quiser mudar todas as cores do marcador basta utilizar uma mark{ background-color: (cor);Que automaticamente mudara todas as cores do marcador PADRAO
 Posso mudar apenas um marcador basta usar o style na linha por exemplo <mark style=background-color: COR;> TEXTO </mark>
 
-<b></b> - Para adicionar a palavra em negrito basta usar a tag <b> e aqui dentro escrever a palavra em destaque (Não semantido)
+<b></b> - Para adicionar a palavra em negrito basta usar a tag <b> e aqui dentro escrever a palavra em destaque (Não semântico)
 <strong></strong> - Para adicionar em negrito na forma certa de uso que serve para dar um sentido ao negrito (Semantico)
 
 <i></i> - Para adicionar uma palavra em italico basta usar <i> TEXTO </i> (Não semantico)
@@ -449,7 +449,7 @@ display:inline-block; - Tem as caracteristicas de um inline e block , assim poss
 
 border: Borda que fica dentro da caixa
 
-padding: Alcolhoamento ou preenchimento (sempre é separado por 4 partes ou posso usar só um pra simplificar, e ele sempre fica em ordem de relogio Cima, Direita, Baixo e Esquerda)
+padding: Acolchoamento ou preenchimento (sempre é separado por 4 partes ou posso usar só um pra simplificar, e ele sempre fica em ordem de relogio Cima, Direita, Baixo e Esquerda)
 padding-top: Cima
 padding-rght: Direita
 padding-bottom: Baixo
@@ -468,7 +468,7 @@ margin: 10px 10px 30px 10px; - Apenas simplificado por shorthand
 margin: 10px auto 30px auto; - Posso automaticamente centralizar uma margin usando desse jeito
 margin: auto; - Isso é usado caso eu queira centralizar uma "caixa" no meio da tela
 
-outline: Contorno ou Traçado que fica foca do elemento (Muito parecido com a border, e sempre vai ficar entre a "border e margin")
+outline: Contorno ou Traçado que fica fora do elemento (Muito parecido com a border, e sempre vai ficar entre a "border e margin")
 outline: 5px dashed goldenrod; - Simplificado com shorthand 
 
 border-width: espessura da borda
@@ -513,7 +513,7 @@ border-radius: 20px 0px; - Tambem posso usar porque assim consigo mudar a borda 
 border-image-source: url('Pasta/NomeDoArquivo');
 border-image-slice: 25 ; - Com isso eu consigo dividir varias vezes a imagem "borda"
 border-image-repeat: repeat; - Com isso eu consigo repetir varias vezes a imagem "borda"
-border-image: url('Pasta/NomeDoArquivo') "Tamanho" repeat/streeh/etc...;
+border-image: url('Pasta/NomeDoArquivo') "Tamanho" repeat/stretch/etc...;
 Usando isso eu consigo criar uma borda personalizada, sempre tenho que criar uma linha de codigo de border: para poder usar essa borda personalizada.
 
 
@@ -555,7 +555,7 @@ background-repeat: repeat-y; -  Faz a repetição para os lados (Eixo Y).
 background-position: Posição Posição; - Usando isso consigo selecionar de onde minha imagem vai ser o ponto de partida.
 Sendo eles, Top, Right, Center, Bottom, Left. Posso usar até duas posições se quiser, Top-Right, Left-Center, Bottom-Center e etc...
 
-height: 98vh;  Unidade de viewport, sempre lemnbrar de configurar
+height: 98vh;  Unidade de viewport, sempre lembrar de configurar
 
 background-attachment: fixed; - Deixa a imagem fixa na tela 
 
@@ -607,7 +607,7 @@ vertical-align: top - Posso organizar minha tabela em alinhameto vertical
 (TAG):nth-child(odd) - Assim adiciono listras nas linhas impares.
 (TAG):nth-child(even) - Assim adiciono listras nas minhas pares. 
 
-Se a hierarquia não for obdecida, a tabela pode ter dados fora ou dentro dela.
+Se a hierarquia não for obedecida, a tabela pode ter dados fora ou dentro dela.
 
 ANATOMIA PARA TABELA GRANDE
     table
