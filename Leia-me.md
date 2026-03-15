@@ -10,7 +10,7 @@ EX-008 # Formatação de texto, textos em negrito, italico, sublinhado, texto gr
 EX-008b # Outras formatações de texto, Codigo-fonte, Citações simples e Abreviações
 EX-009 # Trabalhando com listas, Listas ordenadas e Listas não ordenadas
 EX-010 # Trabalhando com links, Usando links externos, Links Internos e Links para Download
-EX-010b (Desafio) # Nesta pasta, quero que abra o arquivo "Desafio 1.html" e tente recriar apenas olhando a página para treinar, use o arquivo "Anotações de duvidas.txt" para poder resolver. Boa Sorte!
+EX-010b (Desafio) # Nesta pasta, quero que abra o arquivo "Desafio 1.html" e "Desafio 2.html" e tente recriar apenas olhando a página para treinar, use o arquivo "Anotações de duvidas.txt" para poder resolver. Boa Sorte!
 EX-011 # Midias em HTML 5, Imagens Dinamicas e Reproduzindo audio
 EX-012 # Videos em HTML 5, Inserindo videos hospedados localmente 
 EX-012b (Desafio) # Nesta pasta, quero que abra o arquivo "Desafio 1.html" e tente recriar apenas olhando a página para treinar, use o arquivo "Anotações de duvidas.txt" para poder resolver. Boa Sorte!
