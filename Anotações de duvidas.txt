@@ -31,7 +31,7 @@ Estrutura basica de documento em HTML
     <head>
         <meta charset="UTF-8">                     (UTF-8 é usado para palavras que tem acentos ou "Ç")
         <meta name="viewport"
-        content="with=device-witdh,initial-scale=1.0">   (Usado para o site ocupar 100% da escala da tela)
+        content="width=device-width,initial-scale=1.0">   (Usado para o site ocupar 100% da escala da tela)
         <title>Document</title>       (usado para titulo)
 
     </head>
@@ -84,7 +84,7 @@ font-family: "Arial / Sans /..." usado para poder mudar o tipo de fonte
 
 <u></u>Posso usar para criar textos sublinhados exemplo : <u> TEXTO </u>
 
-<adress></adress> - Serve para adicionar a fonte como se fosse um endereço de um local.
+<address></address> - Serve para adicionar a fonte como se fosse um endereço de um local.
 
 <mark></mark> - Se eu quiser mudar todas as cores do marcador basta utilizar uma mark{ background-color: (cor);Que automaticamente mudara todas as cores do marcador PADRAO
 Posso mudar apenas um marcador basta usar o style na linha por exemplo <mark style=background-color: COR;> TEXTO </mark>
@@ -116,11 +116,11 @@ Exemplo:
     print ('fim do programa')
         </code>
 
-<blockquote> - Serve para criar textos deslocados um pouco para dentro usado para citar coisas e o (cite=LINK) serve para quando alguem passar o mouse em cima do texto poderá clicar e ser redirecionado para o site. Exemplo: <blackquote cite= https://www.youtube.com>
+<blockquote> - Serve para criar textos deslocados um pouco para dentro usado para citar coisas e o (cite=LINK) serve para quando alguem passar o mouse em cima do texto poderá clicar e ser redirecionado para o site. Exemplo: <blockquote cite= https://www.youtube.com>
 
 <abbr></abbr> - Usado para criar abreviações , que server pra quando eu passo o mouse em cima , aparece o significado de algo por exemplo:
 <abbr title="HyperTextMarkupLanguage">HTML</abbr> - Assim que passar o mouse em cima de HTML , irá aparecer o significado dele.
-<abbr title="Cascating Style Sheep">CSS</abbr> - Assim que passar o mouse em cima de CSS , irá aparecer o significado dele.
+<abbr title="Cascading Style Sheet">CSS</abbr> - Assim que passar o mouse em cima de CSS , irá aparecer o significado dele.
 
 <ol></ol> Serve para criar uma lista organizada exemplo:
 <ol> type="1" start="1">
@@ -171,7 +171,7 @@ Por exemplo:
 <a></a> - Posso endereçar um link/pagina minha a um texto , essa tag tem varios atributos (target) que são as
 <a href="link" target="_blank"> usado para abrir uma pagina em outra guia
 <a href="link" target="_self"> usado para abrir o link na mesma pagina
-<a href+"link" target="framename" usado para abrir um documento a um frame nomeado e especificado
+<a href="link" target="framename" usado para abrir um documento a um frame nomeado e especificado
 
 Tambem posso adicionar isso á uma pasta e baixar um arquivo por exemplo:
 <a href="PASTA/TIPODEARQUIVO" download="NOMEDOARQUIVO" type="application/(EXTENSÃO DO ARQUIVO/ ZIP/ PNG / JPEG e etc...)">TEXTO</a></li>
@@ -540,7 +540,7 @@ Ponto de Partida - as imagens sempre se iniciam no Canto Superior Esquerdo.
 
 background-image: url(NomeDaPasta/Arquivo); - Usando a função (URL) eu consigo adicionar imagens de fundo meu site.
 
-background-image: url(https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQw7W5msnkiCnX25IlGx4gaEJw3rB_lFSxQkKodlPg2CqIgibXBZBlwxiKFq6h1ymNu); 
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8&s=10); 
 Posso adicionar uma imagem de fundo usando link de imagens.
 
 background-size: Tamanhopx Tamanhopx; - Adiciona um tamanho especifico para uma imagem, caso eu não queira o tamanho por padrão da imagem que esto usando. 
@@ -740,7 +740,7 @@ Quando um campo for obrigatorio eu tenho que adicionar (required) dentro da caix
             <input type="text" name="usu" id="iusu" required>
         </p>
 
-Tambem posso adicionar um tanto de caracteres minimo e maximo usando (minlenght="valor") e (maxlenght="valor") por exemplo:
+Tambem posso adicionar um tanto de caracteres minimo e maximo usando (minlength="valor") e (maxlenght="valor") por exemplo:
 
         <p>
             <label for="usu">Usuario:</label>
